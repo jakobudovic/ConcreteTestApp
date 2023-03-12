@@ -1,24 +1,26 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
 
-function CounterButton({ title, onIncrement }) {
-  return <Button title={title} onPress={onIncrement} />;
-}
-
 export default function App() {
-  console.log("App executed!");
   let x = 1;
   const [count, setCount] = useState(0);
+  const countEvery3 = Math.floor(count / 3);
+
+  useEffect(() => {
+    console.log(countEvery3);
+  }, [countEvery3]);
 
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Hello, world!</Text>
       <StatusBar style="auto" />
-      <CounterButton
-        title={`Click HERE to increment: ${count}`}
-        onIncrement={() => setCount(count + 1)}
+      <Button
+        title={`Increment ${count}`}
+        onPress={() => {
+          setCount(count + 1);
+        }}
       />
     </View>
   );
