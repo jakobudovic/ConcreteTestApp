@@ -1,7 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import {
+  Button,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 
 export default function App() {
   let x = 1;
@@ -13,15 +20,19 @@ export default function App() {
   }, [countEvery3]);
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello, world!</Text>
-      <Button
-        title={`Increment ${count}`}
-        onPress={() => {
-          setCount(count + 1);
-        }}
-      />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        <View style={styles.large} />
+        <ScrollView horizontal>
+          <View style={styles.small} />
+          <View style={styles.small} />
+          <View style={styles.small} />
+        </ScrollView>
+        <View style={styles.large} />
+        <View style={styles.small} />
+        <View style={styles.large} />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
@@ -29,13 +40,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
-    alignItems: "center",
-    justifyContent: "center",
   },
-  text: {
-    color: "rgb(59,108,212)",
-    fontSize: 42,
-    fontWeight: "100",
-    textAlign: "center",
+  small: {
+    width: 200,
+    height: 200,
+    marginBottom: 10,
+    marginRight: 10,
+    backgroundColor: "skyblue",
+  },
+  large: {
+    width: 300,
+    height: 300,
+    marginBottom: 10,
+    marginRight: 10,
+    backgroundColor: "steelblue",
   },
 });
