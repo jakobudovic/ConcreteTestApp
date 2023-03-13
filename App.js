@@ -15,7 +15,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Hello, world!</Text>
-      <StatusBar style="auto" />
       <Button
         title={`Increment ${count}`}
         onPress={() => {
