@@ -1,4 +1,6 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StatusBar } from "expo-status-bar";
+import HomeScreen from "./pages/home.js";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import {
@@ -10,6 +12,9 @@ import {
   Image,
   View,
 } from "react-native";
+
+const queryClient = new QueryClient(); // Initialze the client
+// https://randomuser.me/api?results=10
 
 const items = [
   {
@@ -33,70 +38,28 @@ const items = [
   },
 ];
 
-const Item = ({ item }) => (
-  <View style={styles.itemContainer}>
-    <Image source={{ uri: item.image }} style={styles.itemImage} />
-    <View>
-      <Text style={styles.itemName}>{item.name}</Text>
-      <Text style={styles.itemDescription} numberOfLines={2} width={"50%"}>
-        {item.description}
-      </Text>
-    </View>
-  </View>
-);
-
 export default function App() {
-  let x = 1;
-  const [count, setCount] = useState(0);
-  const countEvery3 = Math.floor(count / 3);
+  // const getUsers = async () => {
+  //   const res = await fetch("https://randomuser.me/api?results=10");
+  //   return res.json();
+  // };
 
-  useEffect(() => {
-    console.log(countEvery3);
-  }, [countEvery3]);
+  // const { data, error, isLoading } = useQuery("randomFacts", getUsers);
 
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.container}>
-        {items.map((item) => (
-          <Item key={item.id} item={item} />
-        ))}
-      </ScrollView>
-    </SafeAreaView>
+    <QueryClientProvider client={queryClient}>
+      <SafeAreaView>
+        <HomeScreen />
+      </SafeAreaView>
+    </QueryClientProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 10,
-  },
-  itemContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginVertical: 10,
-    padding: 10,
-    backgroundColor: "white",
-    borderRadius: 10,
-    elevation: 2,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 2,
-  },
-  itemImage: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
-    marginRight: 10,
-  },
-  itemName: {
-    fontSize: 18,
-    fontWeight: "bold",
-    marginBottom: 5,
-  },
-  itemDescription: {
-    fontSize: 14,
-    color: "#777777",
-  },
-});
+{
+  /* <SafeAreaView style={styles.container}>
+  <ScrollView style={styles.container}>
+    {items.map((item) => (
+      <Item key={item.id} item={item} />
+    ))}
+  </ScrollView>
+</SafeAreaView> */
+}
