@@ -1,0 +1,559 @@
+{
+    "results": [{
+        "gender": "female",
+        "name": {
+            "title": "Ms",
+            "first": "Germana",
+            "last": "Ferreira"
+        },
+        "location": {
+            "street": {
+                "number": 7962,
+                "name": "Rua São Paulo "
+            },
+            "city": "Embu",
+            "state": "Amapá",
+            "country": "Brazil",
+            "postcode": 41693,
+            "coordinates": {
+                "latitude": "-74.7150",
+                "longitude": "87.5195"
+            },
+            "timezone": {
+                "offset": "-6:00",
+                "description": "Central Time (US & Canada), Mexico City"
+            }
+        },
+        "email": "germana.ferreira@example.com",
+        "login": {
+            "uuid": "57c3cc41-5759-4eb8-b84e-1738f5adf724",
+            "username": "whitecat526",
+            "password": "dogs",
+            "salt": "BwL5RHQG",
+            "md5": "118d38effe4325456cc62a8c3526c284",
+            "sha1": "984f03095a1e91fc0d9d6099d6ac6741cad77814",
+            "sha256": "cfee7d1711808a75209db325352ebf4f8aaf33b1530668b9e76aa14ea22c9265"
+        },
+        "dob": {
+            "date": "1957-09-11T22:00:57.874Z",
+            "age": 65
+        },
+        "registered": {
+            "date": "2012-11-20T00:41:32.698Z",
+            "age": 10
+        },
+        "phone": "(36) 8941-2538",
+        "cell": "(28) 6619-3546",
+        "id": {
+            "name": "CPF",
+            "value": "598.854.138-76"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/91.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/91.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/91.jpg"
+        },
+        "nat": "BR"
+    }, {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Zeferino",
+            "last": "Longoria"
+        },
+        "location": {
+            "street": {
+                "number": 2542,
+                "name": "Callejón Sur Naranjo"
+            },
+            "city": "Tiquicheo",
+            "state": "Zacatecas",
+            "country": "Mexico",
+            "postcode": 50884,
+            "coordinates": {
+                "latitude": "3.5003",
+                "longitude": "-37.3625"
+            },
+            "timezone": {
+                "offset": "-12:00",
+                "description": "Eniwetok, Kwajalein"
+            }
+        },
+        "email": "zeferino.longoria@example.com",
+        "login": {
+            "uuid": "d3e9a2e6-86a9-4ecd-8725-eba90f7043ef",
+            "username": "bluegorilla542",
+            "password": "prissy",
+            "salt": "3TgbrkT2",
+            "md5": "88ed9731231cb3fe9c491e580efa9895",
+            "sha1": "5bc3e955688c17c45d897b06af0497ee9196c149",
+            "sha256": "09adf588b6d7864cdd70bf277696197917e13c0c9be90718d44d33ef76b6c6a3"
+        },
+        "dob": {
+            "date": "1969-08-30T19:05:33.465Z",
+            "age": 53
+        },
+        "registered": {
+            "date": "2004-06-25T17:23:08.130Z",
+            "age": 18
+        },
+        "phone": "(673) 615 9953",
+        "cell": "(613) 225 6491",
+        "id": {
+            "name": "NSS",
+            "value": "94 47 12 5078 1"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/36.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/36.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/36.jpg"
+        },
+        "nat": "MX"
+    }, {
+        "gender": "female",
+        "name": {
+            "title": "Miss",
+            "first": "Nelita",
+            "last": "Freitas"
+        },
+        "location": {
+            "street": {
+                "number": 927,
+                "name": "Rua Vinte E Quatro de Outubro"
+            },
+            "city": "Poá",
+            "state": "Amapá",
+            "country": "Brazil",
+            "postcode": 59234,
+            "coordinates": {
+                "latitude": "-8.2303",
+                "longitude": "135.7426"
+            },
+            "timezone": {
+                "offset": "-10:00",
+                "description": "Hawaii"
+            }
+        },
+        "email": "nelita.freitas@example.com",
+        "login": {
+            "uuid": "b1042bdb-3677-415c-9a29-fe8626339a6f",
+            "username": "ticklishzebra392",
+            "password": "charlotte",
+            "salt": "Gj8o7p0p",
+            "md5": "3c0e4c6888cffb39c838302112afde58",
+            "sha1": "e527e2365a613dc25f7a3d1f67b118d102180e0d",
+            "sha256": "73fd3fe93313a6bc7176ed07c65606e7c74d5c2c559f67d6fb6f1da8db6688f2"
+        },
+        "dob": {
+            "date": "1986-08-08T05:51:02.138Z",
+            "age": 36
+        },
+        "registered": {
+            "date": "2022-05-13T00:30:28.623Z",
+            "age": 0
+        },
+        "phone": "(33) 4653-5696",
+        "cell": "(88) 2153-7524",
+        "id": {
+            "name": "CPF",
+            "value": "473.098.972-55"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/67.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/67.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/67.jpg"
+        },
+        "nat": "BR"
+    }, {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Timothy",
+            "last": "Arnold"
+        },
+        "location": {
+            "street": {
+                "number": 5801,
+                "name": "Church Lane"
+            },
+            "city": "Winchester",
+            "state": "Cheshire",
+            "country": "United Kingdom",
+            "postcode": "H8 5UU",
+            "coordinates": {
+                "latitude": "-71.0006",
+                "longitude": "165.8619"
+            },
+            "timezone": {
+                "offset": "+6:00",
+                "description": "Almaty, Dhaka, Colombo"
+            }
+        },
+        "email": "timothy.arnold@example.com",
+        "login": {
+            "uuid": "77c2381c-d21a-4b75-91fb-1882f3f4f33d",
+            "username": "redrabbit739",
+            "password": "dirty1",
+            "salt": "mwhRwfPI",
+            "md5": "1b849d7fd5fe4ad976e44dc34491d464",
+            "sha1": "c2ed7bbcd3cb3fae5d12ed1d53962b1ed990fcf9",
+            "sha256": "33b0977cacdb791dc2882519105ac90eeb416ff9255e29b209a3a1730f2f74e3"
+        },
+        "dob": {
+            "date": "1977-09-30T08:27:22.697Z",
+            "age": 45
+        },
+        "registered": {
+            "date": "2008-05-01T16:40:47.024Z",
+            "age": 14
+        },
+        "phone": "01602 264529",
+        "cell": "07054 297777",
+        "id": {
+            "name": "NINO",
+            "value": "HZ 29 42 52 X"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/73.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/73.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/73.jpg"
+        },
+        "nat": "GB"
+    }, {
+        "gender": "female",
+        "name": {
+            "title": "Madame",
+            "first": "Anne",
+            "last": "Gautier"
+        },
+        "location": {
+            "street": {
+                "number": 2652,
+                "name": "Avenue Paul Eluard"
+            },
+            "city": "Gsteig",
+            "state": "Appenzell Ausserrhoden",
+            "country": "Switzerland",
+            "postcode": 7099,
+            "coordinates": {
+                "latitude": "84.0937",
+                "longitude": "-62.8677"
+            },
+            "timezone": {
+                "offset": "-3:30",
+                "description": "Newfoundland"
+            }
+        },
+        "email": "anne.gautier@example.com",
+        "login": {
+            "uuid": "bfb55698-68af-4aec-b185-b8377c50fdec",
+            "username": "yellowfrog791",
+            "password": "toledo",
+            "salt": "Gh13FsEP",
+            "md5": "c1c4fdb0bb9f534d94af19150c23f19e",
+            "sha1": "f98ecbbf41ee9522eaa1275a2cb3be5e7e030cef",
+            "sha256": "08d48076ddf3fd0aa6ff097315d24bda5caaa43f1a50dc5d12fc3988bc44b06c"
+        },
+        "dob": {
+            "date": "1960-03-18T13:03:27.944Z",
+            "age": 62
+        },
+        "registered": {
+            "date": "2013-06-27T20:44:04.692Z",
+            "age": 9
+        },
+        "phone": "078 980 19 45",
+        "cell": "077 628 02 43",
+        "id": {
+            "name": "AVS",
+            "value": "756.2596.0516.12"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/57.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/57.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/57.jpg"
+        },
+        "nat": "CH"
+    }, {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Kurt",
+            "last": "Morales"
+        },
+        "location": {
+            "street": {
+                "number": 8240,
+                "name": "Alexander Road"
+            },
+            "city": "Stoke-on-Trent",
+            "state": "West Sussex",
+            "country": "United Kingdom",
+            "postcode": "M6 8RW",
+            "coordinates": {
+                "latitude": "-53.9938",
+                "longitude": "12.7040"
+            },
+            "timezone": {
+                "offset": "-3:30",
+                "description": "Newfoundland"
+            }
+        },
+        "email": "kurt.morales@example.com",
+        "login": {
+            "uuid": "866e0c91-f123-451b-91a8-4acb94b04b3e",
+            "username": "sadsnake220",
+            "password": "washington",
+            "salt": "NZ2zDkX8",
+            "md5": "ffa0a92c18e2816ca0cdcd247928bfa4",
+            "sha1": "4fe8645a6b1c64c4e3d93a11004e7d87da93b053",
+            "sha256": "94034a19a842847d03d395fe086a3b9ba739bdb3e3259ab1aec2510d21bbc2f3"
+        },
+        "dob": {
+            "date": "1988-03-03T12:25:27.260Z",
+            "age": 35
+        },
+        "registered": {
+            "date": "2010-08-21T10:09:16.353Z",
+            "age": 12
+        },
+        "phone": "016974 63488",
+        "cell": "07219 474633",
+        "id": {
+            "name": "NINO",
+            "value": "KZ 60 99 16 J"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/39.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/39.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/39.jpg"
+        },
+        "nat": "GB"
+    }, {
+        "gender": "female",
+        "name": {
+            "title": "Miss",
+            "first": "Ece",
+            "last": "Yazıcı"
+        },
+        "location": {
+            "street": {
+                "number": 7163,
+                "name": "Atatürk Sk"
+            },
+            "city": "Hakkâri",
+            "state": "Samsun",
+            "country": "Turkey",
+            "postcode": 38051,
+            "coordinates": {
+                "latitude": "70.6425",
+                "longitude": "64.3844"
+            },
+            "timezone": {
+                "offset": "-12:00",
+                "description": "Eniwetok, Kwajalein"
+            }
+        },
+        "email": "ece.yazici@example.com",
+        "login": {
+            "uuid": "59034a79-4f2a-40f7-9271-9a87462d725a",
+            "username": "redduck541",
+            "password": "tiger2",
+            "salt": "4PrVJQ7V",
+            "md5": "0df00ea75edf4e403588c387cf428420",
+            "sha1": "afa1a5b6eb5d23342e53d931129bd4a8bd15530d",
+            "sha256": "2a060097015db52f7b04c3ee5a919a6c983b23871a471f90e13e15c8d2c970cc"
+        },
+        "dob": {
+            "date": "1945-11-28T21:49:11.834Z",
+            "age": 77
+        },
+        "registered": {
+            "date": "2016-07-12T09:04:41.058Z",
+            "age": 6
+        },
+        "phone": "(407)-162-0389",
+        "cell": "(322)-391-2635",
+        "id": {
+            "name": "",
+            "value": null
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/92.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/92.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/92.jpg"
+        },
+        "nat": "TR"
+    }, {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Flavio",
+            "last": "Urías"
+        },
+        "location": {
+            "street": {
+                "number": 6879,
+                "name": "Viaducto Chiapas"
+            },
+            "city": "Etucuaro",
+            "state": "Aguascalientes",
+            "country": "Mexico",
+            "postcode": 15385,
+            "coordinates": {
+                "latitude": "10.0516",
+                "longitude": "137.0909"
+            },
+            "timezone": {
+                "offset": "-2:00",
+                "description": "Mid-Atlantic"
+            }
+        },
+        "email": "flavio.urias@example.com",
+        "login": {
+            "uuid": "a558e6e6-af48-4a0a-a183-d8b4c7ab13a9",
+            "username": "orangedog699",
+            "password": "slow",
+            "salt": "CdsbiqkQ",
+            "md5": "cea73c27237123c1b60b156ea2495502",
+            "sha1": "d283ca1d33c5668a5db385f15f2eb4e116e030bf",
+            "sha256": "ccb493f6a0a38babb99cb5d4e1f7260cf680bb697589c161660b26963a198e70"
+        },
+        "dob": {
+            "date": "1957-07-28T02:17:03.076Z",
+            "age": 65
+        },
+        "registered": {
+            "date": "2011-01-27T05:30:41.878Z",
+            "age": 12
+        },
+        "phone": "(640) 777 7045",
+        "cell": "(641) 737 7891",
+        "id": {
+            "name": "NSS",
+            "value": "06 57 72 7615 2"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/28.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/28.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/28.jpg"
+        },
+        "nat": "MX"
+    }, {
+        "gender": "male",
+        "name": {
+            "title": "Monsieur",
+            "first": "Adam",
+            "last": "Da Silva"
+        },
+        "location": {
+            "street": {
+                "number": 7760,
+                "name": "Rue de la Gare"
+            },
+            "city": "Rechthalten",
+            "state": "Bern",
+            "country": "Switzerland",
+            "postcode": 4873,
+            "coordinates": {
+                "latitude": "-58.4784",
+                "longitude": "-76.7734"
+            },
+            "timezone": {
+                "offset": "-9:00",
+                "description": "Alaska"
+            }
+        },
+        "email": "adam.dasilva@example.com",
+        "login": {
+            "uuid": "be48238a-fd68-4b86-8dfe-fc58e03836a9",
+            "username": "lazyfish919",
+            "password": "schalke",
+            "salt": "xZQNSusl",
+            "md5": "60d328cf840458eeefa808b0f237f2e7",
+            "sha1": "0b750062a8d687754bf8727b9b75957e54c145c8",
+            "sha256": "e6532ab49d5f940fedfbb1ee70ace158897adb745820f2c134ccd2bd1800d1e9"
+        },
+        "dob": {
+            "date": "1951-01-31T20:15:15.450Z",
+            "age": 72
+        },
+        "registered": {
+            "date": "2015-05-13T23:08:52.810Z",
+            "age": 7
+        },
+        "phone": "075 164 56 12",
+        "cell": "075 409 31 08",
+        "id": {
+            "name": "AVS",
+            "value": "756.7726.3737.68"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/26.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/26.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/26.jpg"
+        },
+        "nat": "CH"
+    }, {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Peter",
+            "last": "Hamilton"
+        },
+        "location": {
+            "street": {
+                "number": 888,
+                "name": "Northaven Rd"
+            },
+            "city": "Palm Bay",
+            "state": "Indiana",
+            "country": "United States",
+            "postcode": 20935,
+            "coordinates": {
+                "latitude": "71.7925",
+                "longitude": "-0.1377"
+            },
+            "timezone": {
+                "offset": "+5:45",
+                "description": "Kathmandu"
+            }
+        },
+        "email": "peter.hamilton@example.com",
+        "login": {
+            "uuid": "ee710873-eccc-4b4e-8ccb-16f5f9f93498",
+            "username": "tinyladybug227",
+            "password": "qbg26i",
+            "salt": "ilJjCKar",
+            "md5": "ad90e1a3d097dcd35d44daec4a1188eb",
+            "sha1": "3dffc21c64f03c71984f87560b8a1338840cc45f",
+            "sha256": "86b39c4dea5068e85eed7670c44bca7b04bb3b936877b367213c0b86085a0a8d"
+        },
+        "dob": {
+            "date": "1988-02-26T20:38:16.580Z",
+            "age": 35
+        },
+        "registered": {
+            "date": "2005-02-27T22:25:34.311Z",
+            "age": 18
+        },
+        "phone": "(747) 281-2361",
+        "cell": "(392) 258-8811",
+        "id": {
+            "name": "SSN",
+            "value": "304-93-4786"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/31.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/31.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/31.jpg"
+        },
+        "nat": "US"
+    }],
+    "info": {
+        "seed": "f48de02e21f01148",
+        "results": 10,
+        "page": 1,
+        "version": "1.4"
+    }
+}

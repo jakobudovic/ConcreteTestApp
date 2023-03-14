@@ -3,12 +3,15 @@ import { View, Image, Text, StyleSheet } from "react-native";
 
 const Item = ({ item }) => (
   <View style={styles.itemContainer}>
-    <Image source={{ uri: item.image }} style={styles.itemImage} />
+    <Image source={{ uri: item.picture.thumbnail }} style={styles.itemImage} />
     <View>
-      <Text style={styles.itemName}>{item.name}</Text>
-      <Text style={styles.itemDescription} numberOfLines={2} width={"50%"}>
-        {item.description}
+      <Text style={styles.itemName}>
+        {item.name.first} {item.name.last}
       </Text>
+      <Text style={styles.itemDescription}>
+        {item.location.city}, {item.location.country}
+      </Text>
+      <Text style={styles.itemDescription}>{item.email}</Text>
     </View>
   </View>
 );
@@ -23,8 +26,7 @@ const styles = StyleSheet.create({
   itemContainer: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
-    marginVertical: 10,
+    marginVertical: 2,
     padding: 10,
     backgroundColor: "white",
     borderRadius: 10,

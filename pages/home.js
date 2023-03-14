@@ -1,12 +1,14 @@
 import { UseGetUsers } from "../components/common/hooks/getAllUsers";
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
+import Item from "../components/Item";
+import user_data from "../user_data";
 
 export default function HomeScreen() {
-  const { data, isLoading } = UseGetUsers();
-  console.log(data.results[0]);
+  let { data, isLoading } = UseGetUsers();
+  data = user_data; // override data
   return (
-    <View>
+    <ScrollView>
       <Text>Home Screen works!</Text>
       {isLoading ? (
         <Text>Loading...</Text>
@@ -14,13 +16,13 @@ export default function HomeScreen() {
         data.results.map((item, key) => {
           return (
             <View>
-              <Text>
-                {item.email} {key}
-              </Text>
+              <Item item={item} />
             </View>
           );
         })
-      ) : null}
-    </View>
+      ) : (
+        <Text>We don't have the data ...</Text>
+      )}
+    </ScrollView>
   );
 }
