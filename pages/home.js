@@ -1,6 +1,6 @@
-import { UseGetUsers } from "../components/common/hooks/getAllUsers";
 import React from "react";
-import { View, Text, ScrollView } from "react-native";
+import { ScrollView, Text } from "react-native";
+import { UseGetUsers } from "../components/common/hooks/getAllUsers";
 import Item from "../components/Item";
 import user_data from "../user_data";
 
@@ -9,16 +9,12 @@ export default function HomeScreen() {
   data = user_data; // override data
   return (
     <ScrollView>
-      <Text>Home Screen works!</Text>
+      <Text>User data base</Text>
       {isLoading ? (
         <Text>Loading...</Text>
       ) : data ? (
         data.results.map((item, key) => {
-          return (
-            <View>
-              <Item item={item} />
-            </View>
-          );
+          return <Item item={item} key={key} />;
         })
       ) : (
         <Text>We don't have the data ...</Text>
