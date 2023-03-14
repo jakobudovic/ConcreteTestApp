@@ -32,6 +32,6 @@ export function getAllProducts() {
   return PRODUCTS;
 }
 
-// export function getProduct(id) {
-//   return PRODUCTS.find((product) => product.id == id);
-// }
+export function getProduct(id) {
+  return PRODUCTS.find((product) => product.id == id);
+}
