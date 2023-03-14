@@ -1,3 +1,4 @@
+import { Block, Input } from "galio-framework";
 import React from "react";
 import {
   ImageBackground,
@@ -17,7 +18,14 @@ export default function HomeScreen({ navigation }) {
     >
       <View style={styles.container}>
         <Text style={styles.text}>Concrete App</Text>
-        <Text>Building connections, one project at a time.</Text>
+        <Text style={styles.slogan}>
+          Building connections, one project at a time.
+        </Text>
+        <View style={styles.input}>
+          <Input placeholder="Email or username" />
+          <Input placeholder="Password" password viewPass />
+        </View>
+        <Block></Block>
         <TouchableOpacity onPress={() => navigation.navigate("Users")}>
           <Text>Go to users tab</Text>
         </TouchableOpacity>
@@ -45,7 +53,12 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 42,
     fontWeight: "300",
-    textAlign: "center",
+  },
+  slogan: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "400",
+    paddingTop: 10,
   },
   buttonText: {
     color: "white",
@@ -68,5 +81,9 @@ const styles = StyleSheet.create({
   },
   blueButton: {
     backgroundColor: "#0197F6",
+  },
+  input: {
+    width: "100%",
+    padding: 20,
   },
 });
