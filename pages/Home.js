@@ -30,7 +30,10 @@ export default function HomeScreen({ navigation }) {
           <Text>Go to users tab</Text>
         </TouchableOpacity>
         <View style={styles.authButtonsContainer}>
-          <TouchableOpacity style={[styles.authButton, styles.blueButton]}>
+          <TouchableOpacity
+            style={[styles.authButton, styles.blueButton]}
+            onPress={() => navigation.navigate("Products")}
+          >
             <Text style={styles.buttonText}>Log In</Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.authButton, styles.redButton]}>
