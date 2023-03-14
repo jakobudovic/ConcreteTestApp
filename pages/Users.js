@@ -4,7 +4,7 @@ import { UseGetUsers } from "../components/common/hooks/getAllUsers";
 import Item from "../components/Item";
 import user_data from "../user_data";
 
-export default function HomeScreen() {
+export default function UsersScreen() {
   let { data, isLoading } = UseGetUsers();
   data = user_data; // override data
   return (
