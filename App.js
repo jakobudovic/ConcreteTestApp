@@ -9,6 +9,7 @@ import { CartIcon } from "./components/CartIcon.js";
 import { Cart } from "./pages/Cart.js";
 import HomeScreen from "./pages/Home.js";
 import { ProductDetails } from "./pages/ProductDetails.js";
+import RegisterScreen from "./pages/Register.js";
 import UsersScreen from "./pages/Users.js";
 
 const queryClient = new QueryClient(); // Initialze the client
@@ -26,6 +27,11 @@ export default function App() {
               component={HomeScreen}
               options={{ headerShown: false }}
             />
+            <Stack.Screen
+              name="Register"
+              component={RegisterScreen}
+              options={{ presentation: "modal" }}
+            />
             <Stack.Screen name="Users" component={UsersScreen} />
             <Stack.Screen
               name="Products"
@@ -42,7 +48,6 @@ export default function App() {
                 // headerLeft: () => <></>, // Remove back button <Button onPress={navigation.goBack} />
                 headerRight: () => <CartIcon navigation={navigation} />,
               })}
-              // options={{ presentation: 'modal' }}  // add this to register
             />
             <Stack.Screen name="Cart" component={Cart} />
           </Stack.Navigator>

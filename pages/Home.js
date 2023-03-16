@@ -36,7 +36,10 @@ export default function HomeScreen({ navigation }) {
           >
             <Text style={styles.buttonText}>Log In</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={[styles.authButton, styles.redButton]}>
+          <TouchableOpacity
+            style={[styles.authButton, styles.redButton]}
+            onPress={() => navigation.navigate("Register")}
+          >
             <Text style={styles.buttonText}>Register</Text>
           </TouchableOpacity>
         </View>
