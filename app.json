@@ -2,6 +2,7 @@
   "expo": {
     "name": "ConcreteTestApp",
     "slug": "ConcreteTestApp",
+    "description": "A test react native app for concrete business",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
