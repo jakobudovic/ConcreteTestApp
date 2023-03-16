@@ -26,7 +26,7 @@ export function ProductsScreen({ navigation }) {
   return (
     <FlatList
       style={styles.productsList}
-      contentContainerStyle={styles.productsListContainer} // Container for products
+      contentContainerStyle={styles.productsListContainer} // Container for products (optional)
       keyExtractor={(item) => item.id.toString()} // Needs id for RN semantics
       data={products}
       renderItem={renderProduct}

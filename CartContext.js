@@ -33,6 +33,7 @@ export function CartProvider(props) {
       }
     });
   }
+
   function getItemsCount() {
     return items.reduce((sum, item) => sum + item.qty, 0);
   }
@@ -41,9 +42,7 @@ export function CartProvider(props) {
     return items.reduce((sum, item) => sum + item.totalPrice, 0);
   }
 
-  console.log("props");
-  console.log(props);
-  console.log(props.children);
+  // Returns whole app wrapped in CartContext
   return (
     <CartContext.Provider
       value={{ items, setItems, getItemsCount, addItemToCart, getTotalPrice }}

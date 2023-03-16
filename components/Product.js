@@ -1,9 +1,10 @@
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
+// Used for Products view lists
 export function Product({ name, price, image, onPress }) {
   return (
-    // pass down onPress function
+    // pass down "onPress" function
     <TouchableOpacity style={styles.card} onPress={onPress}>
       <Image style={styles.thumb} source={image} />
       <View style={styles.infoContainer}>
