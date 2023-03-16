@@ -5,7 +5,9 @@ import { ProductsScreen } from "./pages/Products.js";
 
 import React from "react";
 import { Button } from "react-native";
+import { CartProvider } from "./CartContext.js";
 import HomeScreen from "./pages/Home.js";
+import { ProductDetails } from "./pages/ProductDetails.js";
 import UsersScreen from "./pages/Users.js";
 
 const queryClient = new QueryClient(); // Initialze the client
@@ -14,29 +16,39 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{ headerShown: false }}
-          />
-          <Stack.Screen name="Users" component={UsersScreen} />
-          <Stack.Screen
-            name="Products"
-            component={ProductsScreen}
-            options={({ navigation }) => ({
-              headerLeft: () => <></>, // Remove back button <Button onPress={navigation.goBack} />
-              headerRight: () => (
-                // TODO create shopping cart or side bar
-                <Button title="Cart" onPress={navigation.goBack} />
-              ), // Remove back button <Button onPress={navigation.goBack} />
-            })}
-            // options={{ presentation: 'modal' }}  // add this to register
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </QueryClientProvider>
+    <CartProvider>
+      <QueryClientProvider client={queryClient}>
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="Home">
+            <Stack.Screen
+              name="Home"
+              component={HomeScreen}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen name="Users" component={UsersScreen} />
+            <Stack.Screen
+              name="Products"
+              component={ProductsScreen}
+              options={({ navigation }) => ({
+                headerLeft: () => <></>, // Remove back button <Button onPress={navigation.goBack} />
+                headerRight: () => (
+                  // TODO create shopping cart or side bar
+                  <Button title="Cart" onPress={navigation.goBack} />
+                ), // Remove back button <Button onPress={navigation.goBack} />
+              })}
+            />
+            <Stack.Screen
+              name="ProductDetails"
+              component={ProductDetails}
+              options={({ navigation }) => ({
+                // headerLeft: () => <></>, // Remove back button <Button onPress={navigation.goBack} />
+                // headerRight: () => <></>, //<CartIcon navigation={navigation} />, // Remove back button <Button onPress={navigation.goBack} />
+              })}
+              // options={{ presentation: 'modal' }}  // add this to register
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </QueryClientProvider>
+    </CartProvider>
   );
 }
