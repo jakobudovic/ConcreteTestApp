@@ -6,7 +6,7 @@ const PRODUCTS = [
     // @ts-ignore
     image: require("../../../assets/products/concrete1.jpg"),
     description:
-      "A headset combines a headphone with microphone. Headsets are made with either a single-earpiece (mono) or a double-earpiece (mono to both ears or stereo).",
+      "Normal concrete is a versatile and economical material made from a mixture of cement, water, and aggregates. It is commonly used in construction for foundations, walls, and pavements due to its durability and strength.",
   },
   {
     id: 101,
@@ -15,7 +15,7 @@ const PRODUCTS = [
     // @ts-ignore
     image: require("../../../assets/products/concrete2.jpg"),
     description:
-      "A model car, or toy car, is a miniature representation of an automobile. Other miniature motor vehicles, such as trucks, buses, or even ATVs, etc. are often included in this general category.",
+      "Concrete brick, also known as concrete masonry units (CMUs), are blocks made from a mixture of cement, water, and aggregates. They are popular for their strength, durability, and fire resistance. They are commonly used in construction for load-bearing walls, retaining walls, and fences.",
   },
   {
     id: 102,
@@ -24,7 +24,7 @@ const PRODUCTS = [
     // @ts-ignore
     image: require("../../../assets/products/concrete3.jpg"),
     description:
-      "A cupcake (also British English: fairy cake; Hiberno-English: bun; Australian English: fairy cake or patty cake[1]) is a small cake designed to serve one person.",
+      "Reinforced concrete is a type of concrete that has steel bars or mesh embedded in it to increase its tensile strength. This makes it ideal for construction in areas where earthquakes, hurricanes, or other natural disasters are common. It is commonly used in bridges, tall buildings, and other structures that require extra strength and durability.",
   },
 ];
 
