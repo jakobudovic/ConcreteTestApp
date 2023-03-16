@@ -4,8 +4,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ProductsScreen } from "./pages/Products.js";
 
 import React from "react";
-import { Button } from "react-native";
 import { CartProvider } from "./CartContext.js";
+import { CartIcon } from "./components/CartIcon.js";
 import HomeScreen from "./pages/Home.js";
 import { ProductDetails } from "./pages/ProductDetails.js";
 import UsersScreen from "./pages/Users.js";
@@ -31,10 +31,7 @@ export default function App() {
               component={ProductsScreen}
               options={({ navigation }) => ({
                 headerLeft: () => <></>, // Remove back button <Button onPress={navigation.goBack} />
-                headerRight: () => (
-                  // TODO create shopping cart or side bar
-                  <Button title="Cart" onPress={navigation.goBack} />
-                ), // Remove back button <Button onPress={navigation.goBack} />
+                headerRight: () => <CartIcon navigation={navigation} />,
               })}
             />
             <Stack.Screen
@@ -42,7 +39,7 @@ export default function App() {
               component={ProductDetails}
               options={({ navigation }) => ({
                 // headerLeft: () => <></>, // Remove back button <Button onPress={navigation.goBack} />
-                // headerRight: () => <></>, //<CartIcon navigation={navigation} />, // Remove back button <Button onPress={navigation.goBack} />
+                headerRight: () => <CartIcon navigation={navigation} />,
               })}
               // options={{ presentation: 'modal' }}  // add this to register
             />
