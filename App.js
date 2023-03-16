@@ -45,7 +45,6 @@ export default function App() {
               name="ProductDetails"
               component={ProductDetails}
               options={({ navigation }) => ({
-                // headerLeft: () => <></>, // Remove back button <Button onPress={navigation.goBack} />
                 headerRight: () => <CartIcon navigation={navigation} />,
               })}
             />
