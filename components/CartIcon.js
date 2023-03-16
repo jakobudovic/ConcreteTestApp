@@ -1,21 +1,18 @@
 import React, { useContext } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { CartContext } from "../CartContext";
 
 export function CartIcon({ navigation }) {
   const { getItemsCount } = useContext(CartContext);
   return (
-    <View style={styles.container}>
-      <Text
-        style={styles.text}
-        onPress={() => {
-          console.log("TODO redirect to cart screen");
-          //   navigation.navigate("Cart");
-        }}
-      >
-        🛒 ({getItemsCount()})
-      </Text>
-    </View>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => {
+        navigation.navigate("Cart");
+      }}
+    >
+      <Text style={styles.text}>🛒 ({getItemsCount()})</Text>
+    </TouchableOpacity>
   );
 }
 const styles = StyleSheet.create({
