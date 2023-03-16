@@ -1,15 +1,35 @@
-import React from "react";
-import { ScrollView, Text } from "react-native";
-import { UseGetUsers } from "../components/common/hooks/getAllUsers";
+import React, { useState } from "react";
+import {
+  RefreshControl,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import { useGetUsers } from "../components/common/hooks/getAllUsers";
 import Item from "../components/Item";
 
 export default function UsersScreen() {
-  let { data, isLoading } = UseGetUsers();
+  const [refreshing, setRefreshing] = useState(false);
+  let { data, isLoading, refetch } = useGetUsers();
+
+  const onRefresh = async () => {
+    setRefreshing(true);
+    await refetch();
+    setRefreshing(false);
+  };
+
   // data = user_data; // override data
   return (
-    <ScrollView>
+    <ScrollView
+      refreshControl={
+        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+      }
+    >
       {isLoading ? (
-        <Text>Loading...</Text>
+        <View style={styles.loadingContainer}>
+          <Text>Loading...</Text>
+        </View>
       ) : data ? (
         data.results.map((item, key) => {
           return <Item item={item} key={key} />;
@@ -20,3 +40,9 @@ export default function UsersScreen() {
     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  loadingContainer: {
+    alignItems: "center",
+  },
+});
