@@ -1,8 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 
 const usersUrl = "https://randomuser.me/api";
+
 const getUsers = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 1000)); // Mock delay in API call
   const response = await fetch(usersUrl + "?results=10");
   return response.json();
 };

@@ -8,7 +8,6 @@ export default function UsersScreen() {
   // data = user_data; // override data
   return (
     <ScrollView>
-      <Text>User data base</Text>
       {isLoading ? (
         <Text>Loading...</Text>
       ) : data ? (
