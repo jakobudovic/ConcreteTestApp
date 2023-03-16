@@ -1,4 +1,4 @@
-import { Block, Input } from "galio-framework";
+import { Block, Button, Input } from "galio-framework";
 import React from "react";
 import {
   ImageBackground,
@@ -26,9 +26,14 @@ export default function HomeScreen({ navigation }) {
           <Input placeholder="Password" password viewPass />
         </View>
         <Block></Block>
-        <TouchableOpacity onPress={() => navigation.navigate("Users")}>
-          <Text>Go to users tab</Text>
-        </TouchableOpacity>
+        <Button
+          onPress={() => navigation.navigate("Users")}
+          color="#68C5DB"
+          size="large"
+          style={styles.usersBtn}
+        >
+          Check out random users 👀
+        </Button>
         <View style={styles.authButtonsContainer}>
           <TouchableOpacity
             style={[styles.authButton, styles.blueButton]}
@@ -65,6 +70,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "400",
     paddingTop: 10,
+  },
+  usersBtn: {
+    // width: "100%",
+    // paddingHorizontal: 18,
   },
   buttonText: {
     color: "white",
