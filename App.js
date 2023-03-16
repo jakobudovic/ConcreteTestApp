@@ -6,6 +6,7 @@ import { ProductsScreen } from "./pages/Products.js";
 import React from "react";
 import { CartProvider } from "./CartContext.js";
 import { CartIcon } from "./components/CartIcon.js";
+import { Cart } from "./pages/Cart.js";
 import HomeScreen from "./pages/Home.js";
 import { ProductDetails } from "./pages/ProductDetails.js";
 import UsersScreen from "./pages/Users.js";
@@ -43,6 +44,7 @@ export default function App() {
               })}
               // options={{ presentation: 'modal' }}  // add this to register
             />
+            <Stack.Screen name="Cart" component={Cart} />
           </Stack.Navigator>
         </NavigationContainer>
       </QueryClientProvider>
